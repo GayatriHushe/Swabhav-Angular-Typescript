@@ -1,0 +1,21 @@
+<section>
+    <h1 [innerHtml]='student.name' [style.background-color]='"red"'></h1>
+    <h1 [innerHtml]='student.cgpa' [style.background]="cgpaToColor(student.cgpa)"></h1>
+    <h1 [innerHtml]='student.rollNo'></h1>
+    <img [src]="student.picture" [height]="imgMaxHeight" [width]="imgMaxWidth" />
+
+    <div>
+        <input type="button" class="btn btn-primary" (click)="load()" value="Load" />
+    </div>
+
+    <div *ngIf="students">
+        <ul>
+            <li *ngFor="let s of students">
+                <p [innerText]="s.name"></p>
+                <p [innerText]="s.cgpa" [style.background]="cgpaToColor(s.cgpa)"></p>
+                <p [innerText]="s.rollNo"></p>
+                <img [src]="student.picture" [height]="imgMaxHeight" [width]="imgMaxWidth" />
+            </li>
+        </ul>
+    </div>
+</section>

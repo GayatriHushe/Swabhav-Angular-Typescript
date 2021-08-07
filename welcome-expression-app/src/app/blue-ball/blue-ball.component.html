@@ -1,0 +1,19 @@
+<p>blue-ball works!</p>
+<section>
+    <div class="myDiv" id="rules">
+        <h1>Blue Ball Game Rules</h1>
+        <p>The goal is to identify blue ball</p>
+        <p>Choose any button randomly</p>
+        <p>If you select button and button appears blue then you win</p>
+        <p>If you select button and button appears green then it indicates blue button on left side</p>
+        <p>If you select button and button appears red then it indicates blue button on right side</p>
+    </div>
+    <div>
+        <input type="button" (click)="createButton()" value="Start" class="btn btn-primary"><br>
+
+        <ng-container *ngFor="let ball of balls">
+            <input type="button" (click)="alert(ball)" value="{{ball.index}}" [style.background-color]="ball.color" style="border-radius: 50%;">
+        </ng-container>
+    </div><br>
+    <p [innerHtml]="msg"></p>
+</section>
