@@ -1,0 +1,8 @@
+<section>
+    Enter a number <input type="text" [ngModel]="myNumber">
+    <input type="button" value="Submit" (click)="getQuote(myNumber)">
+    <h1 *ngFor="let quote of myList">
+        <p [innerHtml]="quote"></p>
+    </h1>
+
+</section>

@@ -1,0 +1,13 @@
+<p>numbers-api-component works!</p>
+<section>
+    Enter a number <input type="text" [(ngModel)]="input">
+    <input type="button" value="Submit" (click)="getQuote(input)">
+    <h1 *ngFor="let i of myNumList">
+        <h5 *ngIf="i.isDeleted==false">
+            <p [innerHtml]="i.myData" [style.background-color]="i.myColor"></p>
+            <input type="button" (click)="delete(i)" value="Delete">
+            <hr>
+        </h5>
+    </h1>
+
+</section>
