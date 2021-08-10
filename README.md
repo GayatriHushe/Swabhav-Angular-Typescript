@@ -1,4 +1,4 @@
-# Swabhav-Angular-Typescript
+# Swabhav-Angular-Typescript -1 
 - Files : https://github.com/GayatriHushe/Swabhav-Angular-Typescript
   
 Day 55 : 5/8/21
@@ -38,3 +38,17 @@ Day 57 : 7/8/21
 			  - two-way-service.html
 			  - two-way-service.ts
 	  - numbersApi-app
+	  
+Day 58 : 9/8/21
+  - Programs :
+      - welcome-expression-app
+		  - src/app/two-way-service
+		      - DataService.ts
+			  - two-way-service.html
+			  - two-way-service.ts
+		  - src/app
+		      - moduleA.ts
+			  - moduleB.ts
+			  - moduleA.component.ts
+			  - moduleB.component.ts
+			  - app.module.ts

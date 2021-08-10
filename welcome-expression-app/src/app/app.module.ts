@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TwowaybindComponent } from './twowaybind/twowaybind.component';
 import { BlueBallComponent } from './blue-ball/blue-ball.component';
 import { TwoWayServiceComponent } from './two-way-service/two-way-service.component';
+import { ModuleA } from './moduleA';
+import { ModuleB } from './moduleB';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,7 @@ import { TwoWayServiceComponent } from './two-way-service/two-way-service.compon
     TwoWayServiceComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule,ModuleA,ModuleB
   ],
   providers: [],
     bootstrap: [TwoWayServiceComponent]

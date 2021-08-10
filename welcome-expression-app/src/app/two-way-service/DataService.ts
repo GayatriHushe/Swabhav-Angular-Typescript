@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
+import { asyncScheduler, Observable, range } from "rxjs";
 
 @Injectable({
     providedIn:'root'
@@ -25,5 +25,12 @@ export class DataService
 
         })
         return observable;
+    }
+
+
+    getData3():Observable<Number>
+    {
+        //return range(1,10);
+        return range(1,10,asyncScheduler);
     }
 }
